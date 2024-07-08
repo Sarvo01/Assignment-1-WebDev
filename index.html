@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Surfers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Subway Surfers</h1>
+            <ul>
+                <li><a href="#overview">Game Overview</a></li>
+                <li><a href="#highlights">Game Highlights</a></li>
+                <li><a href="#getting-started">How to Get Started</a></li>
+            </ul>
+            <img class="photo" src="https://imgs.search.brave.com/g0JqxqmaMaOTqpm8K8UJsl0Un8JtoRK7--S6QOouBzQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuc3RpY2twbmcu/Y29tL2ltYWdlcy81/ODlhM2JmNzVhYTYy/OTNhNGFhYzQ4OWYu/cG5n" alt="Subway Surfers Logo" id="logo">
+        </nav>
+    </header>
+
+    <section id="overview">
+        <h2>Game Overview</h2>
+        <p>Subway Surfers is an endless runner mobile game. The game was co-developed by Kiloo and SYBO Games, private companies based in Denmark. It is available on Android, iOS, Kindle, and Windows Phone platforms.</p>
+    </section>
+
+    <section id="highlights">
+        <h2>Game Highlights</h2>
+        <p>Key highlights of Subway Surfers include various characters, power-ups, and events. The game is known for its colorful and vivid HD graphics and smooth swipe controls.</p>
+    </section>
+
+    <section id="getting-started">
+        <h2>How to Get Started</h2>
+        <p>To get started with Subway Surfers, download the game from your respective app store. The game is free to play, with optional in-app purchases. Basic strategies include collecting coins, using power-ups, and completing missions to increase your score.</p>
+    </section>
+
+    <section id="interactive">
+        <h2>Interactive Element</h2>
+        <p id="quiz-question">Click the button to start a quiz!</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </section>
+
+    <footer>
+        <p> Created by Sarvagya Jain</p>
+        <p><a class="Last" href="https://subway-surfers.org/">Click Here to play game </a></p>
+    </footer>
+
+    <script>
+        function startQuiz() {
+            document.getElementById('quiz-question').innerText = 'What year was Subway Surfers released?';
+            const answerButton = document.createElement('button');
+            answerButton.innerText = 'Answer';
+            answerButton.onclick = showAnswer;
+            document.getElementById('interactive').appendChild(answerButton);
+        }
+
+        function showAnswer() {
+            alert('Subway Surfers was released in 2012!');
+        }
+    </script>
+</body>
+</html>
